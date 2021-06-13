@@ -30,6 +30,23 @@ public class DBConnect {
 		insert.executeUpdate();
 		     
 	}
+	public void updateDB(String table) throws SQLException {	
+	
+		String value = "update " + table +" set id=99 where id = 88;";
+		System.out.printf(value);
+		var insert = this.connect().prepareStatement(value);
+		insert.executeUpdate();
+		     
+	}
+
+	public void deleteDB(String table) throws SQLException {	
+		
+		String value = "delete from " + table +" where id = 88;";
+		System.out.printf(value);
+		var insert = this.connect().prepareStatement(value);
+		insert.executeUpdate();
+	}
+
 	public void close() throws SQLException {
 		this.connect().close();
 	}
