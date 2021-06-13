@@ -1,11 +1,8 @@
 package caixa;
 
-
 import java.sql.*;
-import java.util.HashMap;
-import java.util.Map;
-
 import com.mysql.jdbc.Connection;  
+import com.mysql.jdbc.*;
 
 public class DBConnect {
 
@@ -13,8 +10,7 @@ public class DBConnect {
 	public Connection connect() {
 		try{  
 			Class.forName("com.mysql.jdbc.Driver");  
-			Connection con=DriverManager.getConnection(  
-				"jdbc:mysql://localhost:3306/caixa","root","123");  
+			Connection con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/caixa","root","123");  
 			
 			return con;
 		}catch(Exception e){
@@ -34,7 +30,7 @@ public class DBConnect {
 		insert.executeUpdate();
 		     
 	}
-	public void close() {
-		con.close();
+	public void close() throws SQLException {
+		this.connect().close();
 	}
 }
