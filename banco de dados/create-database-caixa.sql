@@ -77,5 +77,6 @@ DESCRIBE cliente;
  /*
  * ADD cliente
  */
-	INSERT INTO cliente (nomeCliente, enderecoCliente, telefoneCliente, rendaCliente, cepCliente, nomeAgencia, numeroConta, senha) VALUES (); 
-	INSERT INTO cliente (nomeCliente, enderecoCliente, telefoneCliente, rendaCliente, cepCliente, nomeAgencia, numeroConta, senha) VALUES ();
+	INSERT INTO cliente (nomeCliente, enderecoCliente, telefoneCliente, rendaCliente, cepCliente, nomeAgencia, numeroConta, senha) VALUES ('Brenda Leite', 'Rua da Glória, 21', 3333-3333, 5000.00, 19018025, 'Agência', 01, '123456'); 
+	INSERT INTO cliente (nomeCliente, enderecoCliente, telefoneCliente, rendaCliente, cepCliente, nomeAgencia, numeroConta, senha) VALUES ('Marcos Vicente', 'Rua da Vitória, 30', 4444-4444, 5000.00, 20018025, 'Agência', 02, '654321');
+    
