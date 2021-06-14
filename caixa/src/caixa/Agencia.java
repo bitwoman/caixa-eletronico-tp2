@@ -1,14 +1,14 @@
 package caixa;
 
 public class Agencia {
-	private String nome;
+	private String nomeAgencia;
 	private int numAgencia;
 
-	public String getNome() {
-		return nome;
+	public String getNomeAgencia() {
+		return nomeAgencia;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNomeAgencia(String nome) {
+		this.nomeAgencia = nome;
 	}
 	public int getNumAgencia() {
 		return numAgencia;

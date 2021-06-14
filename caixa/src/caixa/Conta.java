@@ -3,7 +3,7 @@ package caixa;
 public class Conta {
 	private long numeroConta;
     private Agencia agencia;
-    private String banco, tipoConta;
+    private String tipoConta;
     private double saldoConta;
     private boolean statusConta;
     
@@ -19,12 +19,7 @@ public class Conta {
 	public void setAgencia(Agencia agencia) {
 		this.agencia = agencia;
 	}
-	public String getBanco() {
-		return banco;
-	}
-	public void setBanco(String banco) {
-		this.banco = banco;
-	}
+	
 	public String getTipoConta() {
 		return tipoConta;
 	}
@@ -42,5 +37,7 @@ public class Conta {
 	}
 	public void setStatusConta(boolean statusConta) {
 		this.statusConta = statusConta;
-	}	
+	}
+	
+	
 }
